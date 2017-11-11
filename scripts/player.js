@@ -61,7 +61,6 @@ class Player {
   prettyTime (timeInSeconds) {
     var minutes = Math.floor(timeInSeconds / 60);
     var seconds = Math.floor(timeInSeconds - minutes * 60);
-    this.addZeroToTime(seconds);
     return minutes + ':' + this.addZeroToTime(seconds);
   }
 }
